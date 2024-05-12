@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #af1afa; */
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  min-height: 100svh;
+  width: 50%;
+  height: fit-content;
+  padding-top: 2rem;
+}
+
+#copy {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.output-section {
+  padding: 10px;
+}
+
+textarea {
+  padding: 10px;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 4px;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 500px) {
+  main {
+    flex-direction: column;
+  }
+  section {
+    width: 100%;
+  }
+}
