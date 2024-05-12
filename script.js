@@ -1,7 +1,8 @@
-const btn = document.getElementById("button");
+const btn = document.getElementById("getItems");
 const input = document.getElementById("input");
 const output = document.getElementById("output");
 const copyBtn = document.getElementById("copy");
+const clearBtn = document.getElementById("clear");
 
 let items;
 
@@ -37,4 +38,8 @@ copyBtn.addEventListener("click", async () => {
   } catch (error) {
     alert("Failed, copy manually");
   }
+});
+
+clearBtn.addEventListener("click", () => {
+  input.value = "";
 });
